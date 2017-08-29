@@ -1,21 +1,22 @@
+'use module'
+
 const gulp = require('gulp')
 const rename = require('gulp-rename')
 const path = require('path')
 
 // configs
 // - js
-const jsEntry = './@components/+.js'
-const jsBundle = './bundle.min.js'
+const jsEntry = './views/@views.js'
+const jsBundle = './public/bundle.min.js'
 // - scss
-const scssEntry = './@components/+.scss'
-const scssBundle = './bundle.min.css'
-const scssFiles = ['./@components/**/*.scss']
+const scssEntry = './views/@views.scss'
+const scssBundle = './public/bundle.min.css'
+const scssFiles = ['./views/**/*.scss']
 
 // watch
 gulp.task('watch', function () {
   buildJS({isWatch: true})
   buildScss({isWatch: true})
-  runServer({isWatch: true})
 })
 
 // js
@@ -29,7 +30,7 @@ function buildJS ({isWatch}) {
   return gulp
     .src('')
     .pipe(webpack({
-      entry: [jsEntry],
+      entry: [clientEntry, jsEntry],
       output: {
         filename: jsBundle,
       },
