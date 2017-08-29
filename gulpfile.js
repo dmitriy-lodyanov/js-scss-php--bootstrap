@@ -4,17 +4,18 @@ const path = require('path')
 
 // configs
 // - js
-const jsEntry = './client/+.js'
+const jsEntry = './@components/+.js'
 const jsBundle = './bundle.min.js'
 // - scss
-const scssEntry = './client/+.scss'
+const scssEntry = './@components/+.scss'
 const scssBundle = './bundle.min.css'
-const scssFiles = ['./client/**/*.scss']
+const scssFiles = ['./@components/**/*.scss']
 
 // watch
 gulp.task('watch', function () {
   buildJS({isWatch: true})
   buildScss({isWatch: true})
+  runServer({isWatch: true})
 })
 
 // js
@@ -44,7 +45,11 @@ function buildJS ({isWatch}) {
                 browsers: ['> 0%'],
               },
             }]],
-            plugins: ['transform-runtime'],
+            plugins: [
+              'transform-decorators',
+              'transform-es2015-modules-umd',
+              'transform-runtime',
+            ],
           },
         }],
       },
