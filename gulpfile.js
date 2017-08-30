@@ -30,7 +30,7 @@ function buildJS ({isWatch}) {
   return gulp
     .src('')
     .pipe(webpack({
-      entry: [clientEntry, jsEntry],
+      entry: [jsEntry],
       output: {
         filename: jsBundle,
       },
