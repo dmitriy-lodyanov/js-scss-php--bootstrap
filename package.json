@@ -19,7 +19,6 @@
     "babel-preset-env": "^1.6.0",
     "css-loader": "^0.28.7",
     "css-mqpacker": "^6.0.1",
-    "cssnano": "^3.10.0",
     "eslint": "^4.5.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",

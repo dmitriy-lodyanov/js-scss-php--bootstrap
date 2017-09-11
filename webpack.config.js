@@ -101,7 +101,6 @@ function buildScss (bundles, opts = {}) {
   const discardDuplicates = require('postcss-discard-duplicates')
   const mergeRules = require('postcss-merge-rules')
   const autoprefixer = require('autoprefixer')
-  const cssnano = require('cssnano')
 
   function config (bundle) {
     return {
@@ -135,7 +134,6 @@ function buildScss (bundles, opts = {}) {
                   autoprefixer({
                     browsers: ['> 0%'],
                   }),
-                  cssnano(),
                 ],
               },
             }, {
