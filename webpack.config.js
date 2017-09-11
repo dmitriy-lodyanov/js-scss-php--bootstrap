@@ -122,6 +122,7 @@ function buildScss (bundles, opts = {}) {
                 sourceMap: true,
                 importLoaders: 2,
                 minimize: true,
+                url: false,
               },
             }, {
               loader: 'postcss-loader',
