@@ -1,32 +1,42 @@
 {
   "name": "",
   "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build-js": "webpack --env.build-js",
+    "build-scss": "webpack --env.build-scss",
+    "watch": "webpack --env.watch"
+  },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-decorators": "^6.24.1",
     "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.7",
     "css-mqpacker": "^6.0.1",
     "cssnano": "^3.10.0",
     "eslint": "^4.5.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
-    "gulp": "^3.9.1",
-    "gulp-postcss": "^7.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "node-sass": "^4.5.3",
     "node-sass-glob-once": "^1.0.0-pre1",
+    "null-loader": "^0.1.1",
     "postcss-discard-duplicates": "^2.1.0",
+    "postcss-loader": "^2.0.6",
     "postcss-merge-rules": "^2.1.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
     "stylelint": "^8.0.0",
     "stylelint-order": "^0.6.0",
     "stylelint-scss": "^2.0.1",
     "uglifyjs-webpack-plugin": "^0.4.6",
-    "webpack-stream": "^4.0.0"
+    "webpack": "^3.5.6"
   }
 }

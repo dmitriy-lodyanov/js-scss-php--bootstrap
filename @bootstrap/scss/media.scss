@@ -1,0 +1,30 @@
+// xxs
+$xxs: '(max-width: 543px)';
+
+// xs
+$xs-and-smaller: '(max-width: 767px)';
+$xs: '(min-width: 544px) and (max-width: 767px)';
+$xs-and-larger: '(min-width: 544px)';
+
+// sm
+$sm-and-smaller: '(max-width: 991px)';
+$sm: '(min-width: 768px) and (max-width: 991px)';
+$sm-and-larger: '(min-width: 768px)';
+
+// md
+$md-and-smaller: '(max-width: 1199px)';
+$md: '(min-width: 991px) and (max-width: 1199px)';
+$md-and-larger: '(min-width: 991px)';
+
+// lg
+$lg-and-smaller: '(max-width: 1599px)';
+$lg: '(min-width: 1200px) and (max-width: 1599px)';
+$lg-and-larger: '(min-width: 1200px)';
+
+// xl
+$xl-and-smaller: '(max-width: 2559px)';
+$xl: '(min-width: 1600px) and (max-width: 2559px)';
+$xl-and-larger: '(min-width: 1600px)';
+
+// xxl
+$xxl: '(min-width: 2560px)';

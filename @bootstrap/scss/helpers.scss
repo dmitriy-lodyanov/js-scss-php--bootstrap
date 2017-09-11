@@ -1,0 +1,12 @@
+@mixin clear($mode) {
+  @if $mode == fix {
+    &::after {
+      display: block;
+      clear: both;
+
+      content: '';
+    }
+  } @else {
+    clear: mode;
+  }
+}

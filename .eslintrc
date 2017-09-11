@@ -1,4 +1,5 @@
 {
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 8,
     "ecmaFeatures": {
@@ -36,12 +37,6 @@
       "1tbs",
       {
         "allowSingleLine": true
-      }
-    ],
-    "camelcase": [
-      "error",
-      {
-        "properties": "never"
       }
     ],
     "comma-dangle": [

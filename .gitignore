@@ -1,10 +1,7 @@
 node_modules
-bower_components
 dist
 .vscode
 *.sublime-project
 *.sublime-workspace
-*.min.js
-*.min.js.map
-*.min.css
-*.min.css.map
+*.js.map
+*.css.map

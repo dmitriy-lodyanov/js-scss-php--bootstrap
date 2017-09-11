@@ -1,0 +1,57 @@
+$container-max-width: 960px;
+$col-padding: 10px;
+
+@mixin container($max-w: $container-max-width) {
+  width: 100%;
+  max-width: $max-w;
+  margin: 0 auto;
+}
+
+@mixin row {
+  @include clear(fix);
+  width: 100%;
+}
+
+@mixin container-row($max-w: $container-max-width) {
+  @include clear(fix);
+  width: 100%;
+  max-width: $max-w;
+  margin: 0 auto;
+}
+
+@mixin col($col-num: 1, $p: $col-padding) {
+  float: left;
+
+  width: calc(100% / #{$col-num});
+  padding: 0 $p;
+}
+
+@mixin row-col($p: $col-padding) {
+  width: 100%;
+  padding: 0 $p;
+}
+
+@mixin container-row-col($max-w: $container-max-width, $p: $col-padding) {
+  @include clear(fix);
+  width: 100%;
+  max-width: $max-w;
+  margin: 0 auto;
+  padding: 0 $p;
+}
+
+@mixin adaptive-col($std-num: 4, $sm-num: 3, $xs-num: 2, $xxs-num: 1) {
+  @include col($std-num);
+  margin: 0 0 10px;
+
+  @media #{$sm} {
+    @include col($sm-num);
+  }
+
+  @media #{$xs} {
+    @include col($xs-num);
+  }
+
+  @media #{$xxs} {
+    @include col($xxs-num);
+  }
+}

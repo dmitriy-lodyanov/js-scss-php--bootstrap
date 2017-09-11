@@ -4,18 +4,18 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "type": "gulp",
-      "task": "watch",
+      "type": "npm",
+      "script": "build-js",
       "problemMatcher": []
     },
     {
-      "type": "gulp",
-      "task": "build-scss",
+      "type": "npm",
+      "script": "build-scss",
       "problemMatcher": []
     },
     {
-      "type": "gulp",
-      "task": "build-js",
+      "type": "npm",
+      "script": "watch",
       "problemMatcher": []
     }
   ]
